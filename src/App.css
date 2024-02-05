@@ -1,0 +1,73 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgba(0, 0, 0, 0.377);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.listGlassLayout{
+    position: fixed;
+    left:12%;
+    /* top: 500px; */
+    top: 70%;
+    background-color: white;
+    width: 80%;
+    padding: 10px 5px;
+}
+
+.leftModel{
+    position: fixed;
+    left: 20%;
+    top: 120px;
+    width: 20%;
+}
+.rightModel{
+    position: fixed;
+    right: 20%;
+    top: 120px;
+    width: 20%;
+}
+/* left glass */
+.leftGlassView{
+    position: fixed;
+    left: 25%;
+    top: 200px;
+    width: 10%;
+    opacity: 0.8;
+    
+      
+}
+.leftDetailView{
+    position: fixed;
+    left: 20%;
+    top: 320px;
+    width: 20%;
+    opacity: 0.8;
+    background-color: orange;
+       
+}
+/* right glass */
+.rightGlassView{
+    position: fixed;
+    right: 25%;
+    top: 200px;
+    width: 10%;
+    opacity: 0.8;
+    
+      
+}
+.rightDetailView{
+    position: fixed;
+    right: 20%;
+    top: 320px;
+    width: 20%;
+    opacity: 0.8;
+    background-color: orange;
+       
+}
+
