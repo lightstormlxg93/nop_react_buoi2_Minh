@@ -4,70 +4,124 @@ header{
     left: 0;
     text-align: center;
     width: 100%;
-    padding: 20px 0px;
+    padding: 1% 0px;
     background-color: rgba(0, 0, 0, 0.377);
-    font-size: 20px;
+    
     font-weight: 700;
     color: white;
 }
-.listGlassLayout{
-    position: fixed;
-    left:12%;
-    /* top: 500px; */
-    top: 70%;
-    background-color: white;
-    width: 80%;
-    padding: 10px 5px;
+.backgoundDark{
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+    
 }
-
-.leftModel{
-    position: fixed;
+/* left  */
+.left{
+    position: absolute;
     left: 20%;
+    
     top: 120px;
     width: 20%;
+    height: 40%;
+    position: relative;
+     
 }
-.rightModel{
-    position: fixed;
-    right: 20%;
-    top: 120px;
-    width: 20%;
+.LeftModel {
+    
+    width: 100%;
+    height: 100%;
+    
 }
-/* left glass */
 .leftGlassView{
-    position: fixed;
-    left: 25%;
-    top: 200px;
-    width: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 25%;
+    width: 50%;
+    
     opacity: 0.8;
     
       
 }
 .leftDetailView{
-    position: fixed;
-    left: 20%;
-    top: 320px;
-    width: 20%;
+    position: absolute;
+    left: 0;
+    
+    bottom:0px;
+    width: 100%;
+    height: 33%;
     opacity: 0.8;
     background-color: orange;
+    padding-bottom: 5px;
        
 }
-/* right glass */
+/* right  */
+
+.right{
+    position: absolute;
+    right: 20%;
+    
+    top: 120px;
+    width: 20%;
+    height: 40%;
+    /* position: relative; */
+     
+}
+.rightModel {
+    
+    width: 100%;
+    height: 100%;
+    
+}
 .rightGlassView{
-    position: fixed;
-    right: 25%;
-    top: 200px;
-    width: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 25%;
+    /* top: 0; */
+    width: 50%;
+    
     opacity: 0.8;
     
       
 }
 .rightDetailView{
-    position: fixed;
-    right: 20%;
-    top: 320px;
-    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom:0px;
+    width: 100%;
+    height: 33%;
     opacity: 0.8;
     background-color: orange;
+    padding-bottom: 5px;
+    display: none;
        
 }
 
+
+
+p{
+    color: white;
+    margin: 0;
+    padding-top: 5px;
+    
+}
+h6{
+    margin: 0;
+    
+}
+
+/* danh sách kính */
+.listGlassLayout{
+    position: absolute;
+    left:12%;
+    
+    /* top: 70%; */
+    top: 500px;
+    background-color: white;
+    width: 80%;
+    padding: 10px 5px;
+}

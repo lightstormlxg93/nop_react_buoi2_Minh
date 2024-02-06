@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import GlassLayout from './ExClass/GlassLayout';
+import GlassLayout from './ExGlass/GlassLayout';
 
 
 function App() {
