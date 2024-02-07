@@ -8,30 +8,22 @@ export default class RenderLayout extends Component {
     nameGlass: "",
     descGlass: ""
   }
-  renderRight = (id) => {
+  renderRight = (item) => {
     document.querySelector(".rightDetailView").style.display = "block";
-    dataGlass.map((item) => {
-      if (id == item.id) {
-        this.setState({ urlGlass: item.url });
-        this.setState({ nameGlass: item.name });
-        this.setState({ descGlass: item.desc });
-      }
-    })
+    this.setState({ urlGlass: item.url });
+    this.setState({ nameGlass: item.name });
+    this.setState({ descGlass: item.desc });
   }
 
   renderGlassList = () => {
     return dataGlass.map((item) => {
       return (
-        <div onClick={() => { this.renderRight(item.id) }} className='col-2'>
+        <div onClick={() => { this.renderRight(item) }} className='col-2'>
           <img style={{ width: "100%", border: "3px solid blue", cursor: "pointer" }} src={item.url} alt="" />
         </div>
-
-
       )
     })
   }
-
-
 
   render() {
     return (
@@ -56,7 +48,7 @@ export default class RenderLayout extends Component {
         <div className='listGlassLayout row'>
           {this.renderGlassList()}
         </div>
-        
+
       </div>
     )
   }
